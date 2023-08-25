@@ -2,6 +2,7 @@ import { Header } from "./components/home/Header";
 import Mychart from "./components/home/Mychart";
 import { Nav } from "./components/home/Nav";
 import { SalesActivites } from "./components/home/SalesActivites";
+import Stats from "./components/home/Stats";
 import { Timeline } from "./components/home/Timeline";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <SalesActivites />
         <Timeline />
       </section>
+      <Stats />
     </>
   );
 }

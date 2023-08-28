@@ -31,21 +31,18 @@ export const options = {
     },
     title: {
       display: true,
-      text: "Line Chart",
+      // text: "Line Chart",
     },
   },
 };
 
 const labels = [
-  "January",
-  "February",
+  "Jan",
+  "Feb",
   "March",
   "April",
   "May",
   "June",
-  "July",
-  "Feb",
-  "January",
 ];
 
 export const data = {
@@ -53,7 +50,7 @@ export const data = {
   datasets: [
     {
       label: "Dataset 1",
-      data: [120, 130, 110, 120, 135, 115, 160, 120],
+      data: [120, 130, 110, 120, 135, 115, 140],
       borderColor: "rgba(56, 202, 179)",
       backgroundColor: "rgba(56, 202, 179, 1)",
     },
@@ -62,9 +59,7 @@ export const data = {
 
 const Mychart = () => {
   return (
-    <div className="w-full px-5">
-      <Line options={options} data={data} />
-    </div>
+      <Line options={options} data={data} className="w-full mx-auto min-h-[20rem]"/>
   );
 };
 

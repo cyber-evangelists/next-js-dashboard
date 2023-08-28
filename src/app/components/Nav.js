@@ -16,7 +16,7 @@ const avtar = "https://nextjs.spruko.com/nowa/preview/assets/img/faces/2.jpg";
 const Nav = () => {
   return (
     <>
-      <nav className="bg-white sticky top-0 z-20  ">
+      <nav className="bg-white sticky top-0 z-20">
         <div className="hidden lg:flex items-center">
           <div className="h-[5rem] border py-4 px-2 flex justify-center min-w-[240px]">
             <img src={imgsrc} alt="_logo" className="" />

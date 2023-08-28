@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm': '480px',  // Define your custom breakpoint
+        'md': '768px',  // Define your custom breakpoint
+        'lg': '1024px', // Define your custom breakpoint
+        'xl': '1200px', // Define your custom breakpoint
+        '2xl': '1500px', // Define your custom breakpoint
+        '3xl': '1800px', // Define your custom breakpoint
+        '4xl': '2000px', // Define your custom breakpoint
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

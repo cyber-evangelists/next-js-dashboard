@@ -2,8 +2,8 @@ import React from "react";
 
 export const Timeline = () => {
   return (
-    <section className="bg-white px-5">
-      <div className="flex gap-1 items-center">
+    <section className="bg-white px-5 shadow-md">
+      <div className="flex gap-1 items-center mt-4">
         <div className="w-1 py-4 bg-[#38CAB3]"></div>
         <h1 className="font-medium">TIMELINE</h1>
       </div>
@@ -56,6 +56,12 @@ const data = [
     heading: "Anita Letterback",
     time: "11.43 pm",
     description: "Lorem ipsum dolor tempor incididunt .",
+    circleColor: "border-red-600",
+  },
+  {
+    heading: "Anita Letterback",
+    time: "11.43 pm",
+    description: "Lorem ipsum dolor tempor incididunt .",
     circleColor: "border-yellow-500",
   },
   {
@@ -81,5 +87,11 @@ const data = [
     time: "11.43 pm",
     description: "Lorem ipsum dolor tempor incididunt .",
     circleColor: "border-cyan-500",
+  },
+  {
+    heading: "Anita Letterback",
+    time: "11.43 pm",
+    description: "Lorem ipsum dolor tempor incididunt .",
+    circleColor: "border-yellow-500",
   },
 ];

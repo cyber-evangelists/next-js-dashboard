@@ -2,7 +2,7 @@ import React from "react";
 
 const Stats = () => {
   return (
-    <div className="mt-4 shadow-md px-5 mb-20 py-10">
+    <div className="mt-4 shadow-md px-5 py-10">
       <div className="flex gap-1 items-center">
         <div className="w-1 py-4 bg-[#38CAB3]"></div>
         <h1 className="font-medium">Statistics</h1>
@@ -72,7 +72,7 @@ export default Stats;
 const CallStats = ({ contry, price, lineColor, width, border }) => {
   return (
     <>
-      <div className="flex justify-between items-center flex-grow my-2">
+      <div className="flex justify-between items-center flex-grow my-2 text-xs">
         <h1>{contry}</h1>
         <h1>{price}</h1>
       </div>

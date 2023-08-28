@@ -4,20 +4,26 @@ import Mychart from "./Mychart";
 
 export const SalesActivites = () => {
   return (
-    <>
-      <main className="mt-4 bg-white items-center pb-4 shadow-md w-[70%]">
+    <section className="px-5 bg-white shadow-md">
+      <main className="mt-4 pb-4">
         <nav className="flex justify-between ">
           <div className="flex gap-1 items-center">
             <div className="w-1 py-4 bg-[#38CAB3]"></div>
             <h1 className="font-medium">SALES ACTIVITY</h1>
           </div>
           <div className="flex items-center gap-3">
-            <a className="cursor-pointer py-1 px-2 hover:bg-slate-100 transition-all ease-in-out rounded">Week</a>
-            <a className="cursor-pointer py-1 px-2 hover:bg-slate-100 transition-all ease-in-out rounded">Month</a>
-            <a className="cursor-pointer py-1 px-2 hover:bg-slate-100 transition-all ease-in-out rounded">Year</a>
+            <a className="cursor-pointer py-1 px-2 hover:bg-slate-100 transition-all ease-in-out rounded">
+              Week
+            </a>
+            <a className="cursor-pointer py-1 px-2 hover:bg-slate-100 transition-all ease-in-out rounded">
+              Month
+            </a>
+            <a className="cursor-pointer py-1 px-2 hover:bg-slate-100 transition-all ease-in-out rounded">
+              Year
+            </a>
           </div>
         </nav>
-        <section className="mx-10 flex justify-between mt-10">
+        <section className="lg:mx-10 flex justify-between flex-wrap mt-10">
           <Stats
             cash="$52,618"
             duration="This week"
@@ -42,7 +48,7 @@ export const SalesActivites = () => {
         </section>
         <Mychart />
       </main>
-    </>
+    </section>
   );
 };
 

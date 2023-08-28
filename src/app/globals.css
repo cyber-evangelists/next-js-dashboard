@@ -18,6 +18,7 @@
 
 body {
   background-color: #F9FBFB;
+  /* overflow-x: hidden; */
 }
 .no-style-input {
   /* Resetting default border styles */
@@ -74,4 +75,13 @@ body {
   -ms-animation: rotating 2s linear infinite;
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
+}
+
+table, th, td {
+  border:1px solid #d3d3d3;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
 }

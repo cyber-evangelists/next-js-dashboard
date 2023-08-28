@@ -8,7 +8,7 @@ import Componentss from "./asideItems/componentss";
 const Aside = ({ children }) => {
   return (
     <>
-      <section>
+      <section className="">
         <div className="flex">
           <div className="hidden lg:block min-w-[240px] min-h-screen border bg-white h-screen sticky top-20 overflow-auto">
             <Dashboard />
@@ -17,7 +17,7 @@ const Aside = ({ children }) => {
             <Generel /> 
             <Componentss />
           </div>
-          <div className="flex-1">{children}</div>
+          <div className="w-full">{children}</div>
         </div>
       </section>
     </>

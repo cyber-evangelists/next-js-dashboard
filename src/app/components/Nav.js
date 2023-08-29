@@ -18,8 +18,9 @@ const Nav = () => {
     <>
       <nav className="bg-white sticky top-0 z-20">
         <div className="hidden lg:flex items-center">
-          <div className="h-[5rem] border py-4 px-2 flex justify-center min-w-[240px]">
-            <img src={imgsrc} alt="_logo" className="" />
+          <div className="h-[5rem] border py-4 px-2 flex justify-center items-center gap-2 min-w-[240px]">
+            <img src="/assets/logo.png" alt="_logo" className="inline-block w-10 h-10" />
+            <h1 className="font-medium text-xl">Cyber<span className="text-primary">Evangelists</span></h1>
           </div>
           <div className="h-[5rem] flex-1 flex items-center justify-between border py-4 px-2">
             <div className="flex justify-center items-center">

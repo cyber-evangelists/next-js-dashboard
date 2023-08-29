@@ -14,27 +14,27 @@ import { WeeklyBd } from "./components/home/WeeklyBd";
 
 export default function Home() {
   return (
-    <>
+    <section className="px-2">
       <Nav />
       <Header />
       <section className="xl:flex xl:flex-wrap xl:justify-between xl:gap-4">
-        <div className="min-w-[400px]" style={{flex: "2"}}>
+        <div className="md:min-w-[400px]" style={{flex: "2"}}>
           <SalesActivites />
         </div>
 
-        <div className="min-w-[350px]">
+        <div className="md:min-w-[350px]">
           <Timeline />
         </div>
 
-        <div className="min-w-[300px]">
+        <div className="md:min-w-[300px]">
           <Stats />
         </div>
 
-        <div className="min-w-[450px]">
+        <div className="md:min-w-[450px]">
           <Visitor />
         </div>
 
-        <div className="w-full 3xl:w-[48%] 3xl:border-2 border-red-500">
+        <div className="w-full 3xl:w-[48%]">
           <MainTask />
         </div>
 
@@ -52,6 +52,6 @@ export default function Home() {
 
       </section>
       <ProductSummery />
-    </>
+    </section>
   );
 }

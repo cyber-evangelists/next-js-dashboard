@@ -2,23 +2,25 @@ import React from "react";
 
 export const Timeline = () => {
   return (
-    <section className="bg-white px-5 shadow-md">
-      <div className="flex gap-1 items-center mt-4">
-        <div className="w-1 py-4 bg-[#38CAB3]"></div>
-        <h1 className="font-medium">TIMELINE</h1>
-      </div>
-      <div className="flex flex-col justify-center pl-3 mt-5">
-        {data.map((d, i) => (
-          <List
-            heading={d.heading}
-            time={d.time}
-            description={d.description}
-            circleColor={d.circleColor}
-            key={i}
-          />
-        ))}
-      </div>
-    </section>
+    <div className="px-1 md:px-4 font-secondary">
+      <section className="bg-white shadow-md py-4 mt-4">
+        <div className="flex px-5 gap-1 items-center">
+          <div className="w-1 py-4 bg-primary"></div>
+          <h1 className="font-semibold text-lg">TIMELINE</h1>
+        </div>
+        <div className="flex flex-col justify-center px-5 mt-5">
+          {data.map((d, i) => (
+            <List
+              heading={d.heading}
+              time={d.time}
+              description={d.description}
+              circleColor={d.circleColor}
+              key={i}
+            />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

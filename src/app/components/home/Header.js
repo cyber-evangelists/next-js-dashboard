@@ -7,8 +7,8 @@ import { BsCurrencyDollar, BsFillCreditCard2BackFill } from "react-icons/bs";
 
 export const Header = () => {
   return (
-    <>
-      <section className="mt-4 flex lg:flex-row flex-col shadow-md px-5">
+    <div className="px-1 md:px-4 font-secondary">
+      <section className="mt-4 flex lg:flex-row flex-col mx-auto">
         <div className="flex flex-col lg:w-1/2 bg-white border-r">
           <Design
             icon={RiShoppingBag3Line}
@@ -46,7 +46,7 @@ export const Header = () => {
           />
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

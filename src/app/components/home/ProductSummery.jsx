@@ -5,11 +5,11 @@ import { BiSolidPencil } from "react-icons/bi";
 
 export const ProductSummery = () => {
   return (
-    <>
+    <section className="px-1 md:px-4 font-secondary">
       <div className="mt-4 shadow-md px-5 py-10">
         <div className="flex gap-1 items-center">
-          <div className="w-1 py-4 bg-[#38CAB3]"></div>
-          <h1 className="font-medium">WEEKLY BUDGET</h1>
+          <div className="w-1 py-4 bg-primary"></div>
+          <h1 className="font-semibold text-lg">WEEKLY BUDGET</h1>
         </div>
         <section className="overflow-x-auto">
           <div className="my-4 flex justify-between">
@@ -37,7 +37,7 @@ export const ProductSummery = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
@@ -128,7 +128,7 @@ const TableDesign = () => {
             </td>
             <td>
               <span className="flex gap-2">
-                <a href="#" className="bg-green-400 px-4 py-2 rounded">
+                <a href="#" className="bg-[#18A558] px-4 py-2 rounded">
                   <BiSolidPencil className="text-white" />
                 </a>
                 <a href="#" className="bg-red-400 px-4 py-2 rounded">
@@ -151,7 +151,7 @@ const TableDesign = () => {
             </td>
             <td>
               <span className="flex gap-2">
-                <a href="#" className="bg-green-400 px-4 py-2 rounded">
+                <a href="#" className="bg-[#18A558] px-4 py-2 rounded">
                   <BiSolidPencil className="text-white" />
                 </a>
                 <a href="#" className="bg-red-400 px-4 py-2 rounded">
@@ -174,7 +174,7 @@ const TableDesign = () => {
             </td>
             <td>
               <span className="flex gap-2">
-                <a href="#" className="bg-green-400 px-4 py-2 rounded">
+                <a href="#" className="bg-[#18A558] px-4 py-2 rounded">
                   <BiSolidPencil className="text-white" />
                 </a>
                 <a href="#" className="bg-red-400 px-4 py-2 rounded">
@@ -197,7 +197,7 @@ const TableDesign = () => {
             </td>
             <td>
               <span className="flex gap-2">
-                <a href="#" className="bg-green-400 px-4 py-2 rounded">
+                <a href="#" className="bg-[#18A558] px-4 py-2 rounded">
                   <BiSolidPencil className="text-white" />
                 </a>
                 <a href="#" className="bg-red-400 px-4 py-2 rounded">
@@ -220,7 +220,7 @@ const TableDesign = () => {
             </td>
             <td>
               <span className="flex gap-2">
-                <a href="#" className="bg-green-400 px-4 py-2 rounded">
+                <a href="#" className="bg-[#18A558] px-4 py-2 rounded">
                   <BiSolidPencil className="text-white" />
                 </a>
                 <a href="#" className="bg-red-400 px-4 py-2 rounded">
@@ -243,7 +243,7 @@ const TableDesign = () => {
             </td>
             <td>
               <span className="flex gap-2">
-                <a href="#" className="bg-green-400 px-4 py-2 rounded">
+                <a href="#" className="bg-[#18A558] px-4 py-2 rounded">
                   <BiSolidPencil className="text-white" />
                 </a>
                 <a href="#" className="bg-red-400 px-4 py-2 rounded">
@@ -266,7 +266,7 @@ const TableDesign = () => {
             </td>
             <td>
               <span className="flex gap-2">
-                <a href="#" className="bg-green-400 px-4 py-2 rounded">
+                <a href="#" className="bg-[#18A558] px-4 py-2 rounded">
                   <BiSolidPencil className="text-white" />
                 </a>
                 <a href="#" className="bg-red-400 px-4 py-2 rounded">
@@ -289,7 +289,7 @@ const TableDesign = () => {
             </td>
             <td>
               <span className="flex gap-2">
-                <a href="#" className="bg-green-400 px-4 py-2 rounded">
+                <a href="#" className="bg-[#18A558] px-4 py-2 rounded">
                   <BiSolidPencil className="text-white" />
                 </a>
                 <a href="#" className="bg-red-400 px-4 py-2 rounded">
@@ -312,7 +312,7 @@ const TableDesign = () => {
             </td>
             <td>
               <span className="flex gap-2">
-                <a href="#" className="bg-green-400 px-4 py-2 rounded">
+                <a href="#" className="bg-[#18A558] px-4 py-2 rounded">
                   <BiSolidPencil className="text-white" />
                 </a>
                 <a href="#" className="bg-red-400 px-4 py-2 rounded">
@@ -335,7 +335,7 @@ const TableDesign = () => {
             </td>
             <td>
               <span className="flex gap-2">
-                <a href="#" className="bg-green-400 px-4 py-2 rounded">
+                <a href="#" className="bg-[#18A558] px-4 py-2 rounded">
                   <BiSolidPencil className="text-white" />
                 </a>
                 <a href="#" className="bg-red-400 px-4 py-2 rounded">

@@ -51,8 +51,9 @@ export const data = {
     {
       label: "Dataset 1",
       data: [120, 130, 110, 120, 135, 115, 140],
-      borderColor: "rgba(56, 202, 179)",
-      backgroundColor: "rgba(56, 202, 179, 1)",
+      borderColor: "#a181fd",
+      backgroundColor: "#a181fd",
+      // borderRadius: "100px"
     },
   ],
 };

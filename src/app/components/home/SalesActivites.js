@@ -1,11 +1,37 @@
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import { BiSolidUpArrow } from "react-icons/bi";
 import Mychart from "./Mychart";
+import TestMyChart from "./TestMyChart";
 
 export const SalesActivites = () => {
+  // const [str, setStr] = useState('');
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     //const newWidth = window.innerWidth > 768 ? 550 : 270; // You can adjust the breakpoint and widths
+      
+  //     if(window.innerWidth > 768) {
+  //       setStr(`w-[570px]`)
+  //     }
+  //     else if(window.innerWidth > 1200){
+  //       setStr(`w-[770px]`)
+  //     }
+  //     else{
+  //       setStr(`w-[290px]`)
+  //     }
+  //   };
+
+  //   window.addEventListener("resize", handleResize);
+  //   handleResize(); // Initial setup
+
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
   return (
     <div className="px-1 md:px-4 font-secondary">
-      <section className="bg-white shadow-md xl:pb-[23px]">
+      <section className={`bg-white shadow-md xl:pb-[23px]`}>
         <main className="px-5 py-5 mt-4 pb-4">
           <nav className="block lg:flex justify-between">
             <div className="flex gap-1 items-center">
@@ -47,7 +73,7 @@ export const SalesActivites = () => {
               iconColor="text-[#18A558]"
             />
           </section>
-          <Mychart /> 
+          <TestMyChart />
         </main>
       </section>
     </div>

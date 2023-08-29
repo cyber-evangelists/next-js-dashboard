@@ -1,7 +1,6 @@
 "use client";
 import { Header } from "./components/home/Header";
 import { MainTask } from "./components/home/MainTask";
-import Mychart from "./components/home/Mychart";
 import { Nav } from "./components/home/Nav";
 import { ProductSummery } from "./components/home/ProductSummery";
 import { RecentCustomer } from "./components/home/RecentCustomer";

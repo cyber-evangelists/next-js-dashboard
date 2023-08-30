@@ -16,8 +16,8 @@ export default function Home() {
     <section className="px-2">
       <Nav />
       <Header />
-      <section className="xl:flex xl:flex-wrap xl:justify-between xl:gap-4">
-        <div className="md:min-w-[400px]" style={{flex: "2"}}>
+      <section className="xl:flex xl:flex-wrap ">
+        <div className="md:min-w-[400px]" style={{ flex: "2" }}>
           <SalesActivites />
         </div>
 
@@ -29,26 +29,24 @@ export default function Home() {
           <Stats />
         </div>
 
-        <div className="md:min-w-[450px]">
+        <div className="md:min-w-[300px]">
           <Visitor />
         </div>
-
-        <div className="md:min-w-[380px]">
-          <MainTask />
-        </div>
-
-        <div className="flex-1">
+        <div className="md:min-w-[355px] xl:min-w-[300px] 2xl:order-1">
           <RecentTrans />
         </div>
 
-        <div className="flex-1">
+        <div className="xl:w-[350px]">
+          <MainTask />
+        </div>
+
+        <div className="md:min-w-[345px]">
           <WeeklyBd />
         </div>
 
-        <div className="w-full">
+        <div className="min-w-full 2xl:min-w-[320px]">
           <RecentCustomer />
         </div>
-
       </section>
       <ProductSummery />
     </section>

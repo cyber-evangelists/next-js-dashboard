@@ -17,37 +17,22 @@ const data = [
   {
     name: "A",
     uv: 10,
-    pv: 40,
+    pv: 30,
   },
   {
     name: "B",
-    uv: 30,
-    pv: 20,
+    uv: 20,
+    pv: 10,
   },
   {
     name: "C",
     uv: 20,
-    pv: 40,
+    pv: 30,
   },
   {
     name: "D",
-    uv: 27,
-    pv: 35,
-  },
-  {
-    name: "E",
-    uv: 18,
-    pv: 55,
-  },
-  {
-    name: "F",
-    uv: 23,
-    pv: 28,
-  },
-  {
-    name: "G",
-    uv: 34,
-    pv: 15,
+    uv: 28,
+    pv: 25,
   },
 ];
 
@@ -75,7 +60,7 @@ export default function MyChartTwo() {
   }, []);
   return (
     <section className="mt-5">
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={250}>
         <LineChart
           width={400}
           height={200}

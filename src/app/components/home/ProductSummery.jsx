@@ -6,7 +6,7 @@ import { BiSolidPencil } from "react-icons/bi";
 export const ProductSummery = () => {
   return (
     <section className="px-1 md:px-4 font-secondary">
-      <div className="mt-4 shadow-md px-5 py-10">
+      <div className="mt-4 shadow-md bg-white px-5 py-10">
         <div className="flex gap-1 items-center">
           <div className="w-1 py-4 bg-primary"></div>
           <h1 className="font-semibold text-lg">WEEKLY BUDGET</h1>
@@ -20,7 +20,7 @@ export const ProductSummery = () => {
               <option value="audi">Show 25</option>
             </select>
             <div>
-              <input type="text" placeholder="Search..." className="border px-2 py-1"/>
+              <input type="text" placeholder="Search..." className=" px-2 py-1"/>
             </div>
           </div>
           <TableDesign />

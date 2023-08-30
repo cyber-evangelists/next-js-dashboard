@@ -6,7 +6,7 @@ import { HiMenuAlt1 } from "react-icons/hi";
 import { CiDark } from "react-icons/ci";
 import { AiOutlineMail, AiOutlineShoppingCart } from "react-icons/ai";
 import { IoMdNotificationsOutline } from "react-icons/io";
-import { FcSettings } from "react-icons/fc";
+import { FiSettings} from "react-icons/fi";
 import Link from "next/link";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
@@ -19,7 +19,7 @@ const Nav = () => {
       <nav className="bg-white sticky top-0 z-20">
         <div className="hidden lg:flex items-center">
           <div className="h-[5rem] border py-4 px-2 flex justify-center items-center gap-2 min-w-[240px]">
-            <img src="/assets/logo.png" alt="_logo" className="inline-block w-10 h-10" />
+            <img src="/assets/logo.png" alt="_logo" className="inline-block w-9 h-9" />
             <h1 className="font-medium text-xl">Cyber<span className="text-primary">Evangelists</span></h1>
           </div>
           <div className="h-[5rem] flex-1 flex items-center justify-between border py-4 px-2">
@@ -75,10 +75,10 @@ const Nav = () => {
                   <BiMenuAltLeft className="text-3xl" />
                 </Link>
                 <Link href="#">
-                  <img src={avtar} alt="_avtar" className="rounded-full w-10" />
+                  <img src={avtar} alt="_avtar" className="rounded-full w-7" />
                 </Link>
                 <Link href="#">
-                  <FcSettings className="text-3xl rotating" />
+                  <FiSettings className="text-lg rotating" />
                 </Link>
               </div>
             </div>
@@ -101,19 +101,20 @@ const SmallScreen = () => {
           <div>
             <HiMenuAlt1 className="text-xl sm:text-3xl mr-2" />
           </div>
-          <div className="py-4 px-2 flex justify-center">
-            <img src={imgsrc} alt="_logo" className="w-[70%] sm:w-full" />
+          <div className="h-[3.5rem] py-4 px-2 flex justify-center items-center gap-2 min-w-[100px]">
+            <img src="/assets/logo.png" alt="_logo" className="inline-block w-9 h-9" />
+            {/* <h1 className="font-medium text-xl">Cyber<span className="text-primary">Evangelists</span></h1> */}
           </div>
           <div className="flex items-center gap-5">
             <div className="cursor-pointer" onClick={() => setdots(!dots)}>
               <BsThreeDotsVertical className="text-xl sm:text-3xl" />
             </div>
             <Link href="#">
-              <FcSettings className="text-xl sm:text-3xl rotating" />
+              <FiSettings className="text-lg sm:text-3xl rotating" />
             </Link>
           </div>
         </div>
-        <section className="w-full  bg-red-500">
+        <section className="w-full">
           {dots && (
             <>
               <div className="flex justify-center items-center gap-6 sm:gap-8 shadow-md w-full py-4 px-5">

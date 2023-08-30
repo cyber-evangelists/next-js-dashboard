@@ -108,7 +108,7 @@ export default function TestMyChart() {
           <XAxis dataKey="name" />
           <YAxis />
           {/* position={{ y: 165, x: 1 }} */}
-          <Tooltip />
+          <Tooltip position={{ y: 265 }}/>
           <Line
             type="monotone"
             dataKey="uv"
@@ -117,7 +117,7 @@ export default function TestMyChart() {
             strokeWidth={3}
             dot={false}
             style={{
-              filter: `drop-shadow(1px 2px 5px #8884d8)`,
+              filter: `drop-shadow(1px 2px 2px #8884d8)`,
             }}
           />
         </LineChart>

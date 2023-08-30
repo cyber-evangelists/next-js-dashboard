@@ -21,8 +21,11 @@
 
 
 body {
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  /* background-color: #F8FDE1; */
+  background-color: #f7f7f7;
   color: var(--text-color);
+  
 }
 .no-style-input {
   /* Resetting default border styles */
@@ -88,4 +91,39 @@ table, th, td {
 
 th, td {
   padding: 10px;
+}
+
+
+ /* input {
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 0;
+  outline: none;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  background-color: transparent; 
+} */
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e6e1fd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a181fd;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b8a1ff;
 }

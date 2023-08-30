@@ -60,7 +60,7 @@ export const data = {
 export const Visitor = () => {
   return (
     <div className="px-1 md:px-4 font-secondary">
-      <div className="mt-4 shadow-md bg-white xl:pb-[54px] px-5 py-10">
+      <div className="mt-4 shadow-md bg-white px-5 py-5">
         <div className="flex gap-1 items-center">
           <div className="w-1 py-4 bg-primary"></div>
           <h1 className="font-semibold text-lg">WEEKLY VISITORS</h1>

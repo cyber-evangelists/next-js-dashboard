@@ -5,7 +5,7 @@ import { BsBookmark, BsThreeDots } from "react-icons/bs";
 export const RecentTrans = () => {
   return (
     <section className="px-1 md:px-4 font-secondary">
-      <div className="mt-4 shadow-md px-5 py-10">
+      <div className="mt-4 shadow-md bg-white px-5 py-10">
         <div className="flex gap-1 items-center">
           <div className="w-1 py-4 bg-primary"></div>
           <h1 className="font-semibold text-lg">RECENT TRANSACTIONS</h1>

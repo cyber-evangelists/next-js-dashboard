@@ -17,34 +17,34 @@ export default function Home() {
       <Nav />
       <Header />
       <section className="xl:flex xl:flex-wrap ">
-        <div className="md:min-w-[400px]" style={{ flex: "2" }}>
+        <div style={{ flex: "2" }}>
           <SalesActivites />
         </div>
 
-        <div className="md:min-w-[350px]">
+        <div className="md:min-w-[30%]" style={{ flex: "1" }}>
           <Timeline />
         </div>
 
-        <div className="md:min-w-[300px]">
+        <div className="md:min-w-[30%]" style={{ flex: "1" }}>
           <Stats />
         </div>
 
-        <div className="md:min-w-[300px]">
+        <div className="md:min-w-[30%]" style={{ flex: "1" }}>
           <Visitor />
         </div>
-        <div className="md:min-w-[355px] xl:min-w-[300px] 2xl:order-1">
+        <div className="md:min-w-[30%] 2xl:order-1" style={{ flex: "1" }}>
           <RecentTrans />
         </div>
 
-        <div className="xl:w-[350px]">
+        <div className="md:min-w-[30%]" style={{ flex: "1" }}>
           <MainTask />
         </div>
 
-        <div className="md:min-w-[345px]">
+        <div className="md:min-w-[30%]" style={{ flex: "1" }}>
           <WeeklyBd />
         </div>
 
-        <div className="min-w-full 2xl:min-w-[320px]">
+        <div className="md:min-w-[30%]" style={{ flex: "1" }}>
           <RecentCustomer />
         </div>
       </section>

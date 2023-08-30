@@ -10,6 +10,7 @@ import {
   Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import MyChartThree from "./MyChartThree";
 
 ChartJS.register(
   CategoryScale,
@@ -54,12 +55,12 @@ export const data = {
 export const WeeklyBd = () => {
   return (
     <section className="px-1 md:px-4 font-secondary">
-      <div className="mt-4 shadow-md px-5 py-10">
+      <div className="mt-4 shadow-md px-5 py-10 bg-surface">
         <div className="flex gap-1 items-center">
           <div className="w-1 py-4 bg-primary"></div>
           <h1 className="font-semibold text-lg">WEEKLY BUDGET</h1>
         </div>
-        <Bar options={options} data={data} className="min-h-[260px]"/>
+        <MyChartThree />
       </div>
     </section>
   );

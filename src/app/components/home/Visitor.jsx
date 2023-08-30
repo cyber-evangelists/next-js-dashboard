@@ -12,6 +12,7 @@ import {
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
+import MyChartTwo from "./MyChartTwo";
 
 ChartJS.register(
   CategoryScale,
@@ -82,7 +83,8 @@ export const Visitor = () => {
             </h1>
           </div>
         </div>
-        <Line options={options} data={data} className="min-h-[300px]" />
+        {/* <Line options={options} data={data} className="min-h-[300px]" /> */}
+        <MyChartTwo />
       </div>
     </div>
   );

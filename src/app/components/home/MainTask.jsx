@@ -60,7 +60,7 @@ export const MainTask = () => {
             <div className="bg-primary px-2 text-white rounded text-xs py-1">
               Today
             </div>
-          </div>
+          </div> 
           <div className="flex items-center justify-between my-2">
             <div className="flex gap-3">
               <input
@@ -72,7 +72,7 @@ export const MainTask = () => {
                 To have a complete 360° overview of sales information, having.
               </h1>
             </div>
-            <div className="bg-primary px-2 text-white rounded text-xs py-1">
+            <div className="bg-primary px-2 text-white ml-3 rounded text-xs py-1">
               Today
             </div>
           </div>

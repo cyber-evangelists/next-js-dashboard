@@ -33,7 +33,7 @@ export default function Home() {
           <Visitor />
         </div>
 
-        <div className="w-full 3xl:w-[48%]">
+        <div className="md:min-w-[380px]">
           <MainTask />
         </div>
 

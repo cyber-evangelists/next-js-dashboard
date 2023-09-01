@@ -13,7 +13,7 @@ import { WeeklyBd } from "./components/home/WeeklyBd";
 
 export default function Home() {
   return (
-    <section className="px-2">
+    <section className="px-2 text-black-900">
       <Nav />
       <Header />
       <section className="xl:flex xl:flex-wrap ">

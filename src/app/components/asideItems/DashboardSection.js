@@ -2,17 +2,17 @@
 import MainStructure from "./MainStructure";
 import { BiHome } from "react-icons/bi";
 
-const Dashboard = () => {
+const DashboardSection = () => {
 
   return (
     <>
-              <h1 className="text-[#B7BAC3] px-3 py-2 text-xs mb-5">Main</h1>
-        <MainStructure subHeading="Dashboards" icon={BiHome} mapLinks={dashboardLinks}/>
+      <h1 className="text-[#B7BAC3] px-3 py-2 text-xs mb-5">Main</h1>
+      <MainStructure subHeading="Dashboards" icon={BiHome} mapLinks={dashboardLinks}/>
     </>
   );
 };
 
-export default Dashboard;
+export default DashboardSection;
 
 const dashboardLinks = [
     { link : "#" , title: "Dashboard 01"},

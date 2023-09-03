@@ -1,15 +1,15 @@
 "use client";
 import { Header } from "./components/home/Header";
-import { MainTask } from "./components/home/MainTask";
+import { Tasks } from "./components/home/Tasks";
 import { Nav } from "./components/home/Nav";
 import { ProductSummery } from "./components/home/ProductSummery";
-import { RecentCustomer } from "./components/home/RecentCustomer";
-import { RecentTrans } from "./components/home/RecentTrans";
+import { Customer } from "./components/home/Customer";
+import { Transactions } from "./components/home/Transactions";
 import { SalesActivites } from "./components/home/SalesActivites";
 import Stats from "./components/home/Stats";
 import { Timeline } from "./components/home/Timeline";
 import { Visitor } from "./components/home/Visitor";
-import { WeeklyBd } from "./components/home/WeeklyBd";
+import { Budget } from "./components/home/Budget";
 
 export default function Home() {
   return (
@@ -33,19 +33,19 @@ export default function Home() {
           <Visitor />
         </div>
         <div className="md:min-w-[30%] 2xl:order-1" style={{ flex: "1" }}>
-          <RecentTrans />
+          <Transactions/>
         </div>
 
         <div className="md:min-w-[30%]" style={{ flex: "1" }}>
-          <MainTask />
+          <Tasks />
         </div>
 
         <div className="md:min-w-[30%]" style={{ flex: "1" }}>
-          <WeeklyBd />
+          <Budget />
         </div>
 
         <div className="md:min-w-[30%]" style={{ flex: "1" }}>
-          <RecentCustomer />
+          <Customer />
         </div>
       </section>
       <ProductSummery />

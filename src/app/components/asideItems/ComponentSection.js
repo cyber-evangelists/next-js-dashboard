@@ -6,7 +6,7 @@ import { AiOutlineForm } from "react-icons/ai";
 import { CiPaperplane, CiViewTable } from "react-icons/ci";
 import { BiSolidWidget } from "react-icons/bi";
 
-const Componentss = () => {
+const ComponentSection = () => {
   return (
     <>
       <h1 className="text-[#B7BAC3] px-3 py-2 text-xs my-5 ">COMPONENTS</h1>
@@ -30,7 +30,7 @@ const Componentss = () => {
   );
 };
 
-export default Componentss;
+export default ComponentSection;
 
 const formsLinks = [
   { link: "#", title: "Cards" },

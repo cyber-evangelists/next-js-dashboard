@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineDoubleRight, AiOutlineFileText } from "react-icons/ai";
 import { BsBookmark, BsThreeDots } from "react-icons/bs";
 
-export const RecentTrans = () => {
+export const Transactions = () => {
   return (
     <section className="px-1 md:px-4 font-secondary">
       <div className="mt-4 shadow-md bg-white px-5 py-10">

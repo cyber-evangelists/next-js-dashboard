@@ -9,54 +9,49 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-} from "recharts";
+} from "recharts"; 
 
 const data = [
     {
       name: "A",
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
+      LastWeek: 4000,
+      ThisWeek: 2400,
     },
     {
       name: "B",
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
+      LastWeek: 3000,
+      ThisWeek: 1398,
     },
     {
       name: "C",
-      uv: 2000,
-      pv: 4000,
-      amt: 2290,
+      LastWeek: 2000,
+      ThisWeek: 4000,
     },
     {
       name: "D",
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
+      LastWeek: 2780,
+      ThisWeek: 3908,
     },
     {
       name: "E",
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
+      LastWeek: 1890,
+      ThisWeek: 4800,
     },
     // {
     //   name: "Page F",
-    //   uv: 2390,
-    //   pv: 3800,
+    //   LastWeek: 2390,
+    //   ThisWeek: 3800,
     //   amt: 2500,
     // },
     // {
     //   name: "Page G",
-    //   uv: 3490,
-    //   pv: 4300,
+    //   LastWeek: 3490,
+    //   ThisWeek: 4300,
     //   amt: 2100,
     // },
   ];
 
-export default function MyChartThree() {
+export default function BudgetCharty() {
   const [selectedLegendOne, setSelectedLegendOne] = useState(true);
   const [selectedLegendTwo, setSelectedLegendTwo] = useState(true);
   const [barData, setBarData] = useState(data)
@@ -71,9 +66,9 @@ export default function MyChartThree() {
 //   };
 
   const selectBar = (e) => {
-    if(e.dataKey === "pv"){
-        if(barData[0].pv !== 0){
-            const updateData =  barData.map((p)=>({...p , pv : 0}));
+    if(e.dataKey === "ThisWeek"){
+        if(barData[0].ThisWeek !== 0){
+            const updateData =  barData.map((p)=>({...p , ThisWeek : 0}));
        setBarData(updateData);
         }
        
@@ -82,8 +77,8 @@ export default function MyChartThree() {
         }
     }
     else{
-        if(barData[0].uv !== 0){
-            const updateData =  barData.map((p)=>({...p , uv : 0}));
+        if(barData[0].LastWeek !== 0){
+            const updateData =  barData.map((p)=>({...p , LastWeek : 0}));
        setBarData(updateData);
         }
        
@@ -116,10 +111,10 @@ export default function MyChartThree() {
             // onMouseOver={handleLegendMouseEnter}
             // onMouseOut={handleLegendMouseLeave}
           />
-          {/* <Bar dataKey="pv" fill={selectedLegendOne  ? "#8884d8" : "#FFF"} /> */}
-          <Bar dataKey={selectedLegendOne  ? "pv" : " "} fill="#8884d8" />
-          <Bar dataKey={selectedLegendOne  ? "uv" : " "} fill="#82ca9d" />
-          {/* <Bar dataKey="uv" fill={selectedLegendTwo  ? "#82ca9d" : "#FFF"} /> */}
+          {/* <Bar dataKey="ThisWeek" fill={selectedLegendOne  ? "#8884d8" : "#FFF"} /> */}
+          <Bar dataKey={selectedLegendOne  ? "ThisWeek" : " "} fill="#8884d8" />
+          <Bar dataKey={selectedLegendOne  ? "LastWeek" : " "} fill="#82ca9d" />
+          {/* <Bar dataKey="LastWeek" fill={selectedLegendTwo  ? "#82ca9d" : "#FFF"} /> */}
         </BarChart>
       </ResponsiveContainer>
     </section>

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const MainTask = () => {
+export const Tasks = () => {
   return (
     <section className="px-1 md:px-4 font-secondary">
       <div className="mt-4 shadow-md bg-white px-5 py-10">

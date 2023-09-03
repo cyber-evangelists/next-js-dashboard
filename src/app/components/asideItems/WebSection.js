@@ -4,7 +4,7 @@ import MainStructure from "./MainStructure";
 import { AiOutlineAppstoreAdd, AiOutlineSafetyCertificate } from "react-icons/ai";
 import { BsFillDatabaseFill } from "react-icons/bs";
 
-const Web = () => {
+const WebSection = () => {
   return (
     <section className="">
       <h1 className="text-[#B7BAC3] px-3 py-2 text-xs my-5 ">Web APPS</h1>
@@ -27,7 +27,7 @@ const Web = () => {
   );
 };
 
-export default Web;
+export default WebSection;
 
 const appsLinks = [
   { link: "#", title: "Cards" },

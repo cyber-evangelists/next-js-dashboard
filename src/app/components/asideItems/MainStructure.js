@@ -49,7 +49,7 @@ const MainStructure = ({ subHeading, mapLinks, icon }) => {
           </span>
         </button>
         {isOpen && (
-          <div className="mt-2 w-full bg-white py-2 px-6">
+          <div className="mt-2 w-full py-2 px-6">
             {mapLinks.map((d, i) => {
               return (
                 <section key={i} className="">

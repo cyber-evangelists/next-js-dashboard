@@ -4,7 +4,7 @@ import MainStructure from './MainStructure'
 import { BiSolidLayer } from 'react-icons/bi'
 import { TbClockExclamation } from 'react-icons/tb'
 
-const Pagescom = () => {
+const PagesSection = () => {
   return (
     <>
         <h1 className="text-[#B7BAC3] px-3 py-2 text-xs my-5 ">PAGES</h1>
@@ -22,7 +22,7 @@ const Pagescom = () => {
   )
 }
 
-export default Pagescom
+export default PagesSection
 
 
   

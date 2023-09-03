@@ -16,27 +16,63 @@ import {
 const data = [
   {
     name: "A",
-    uv: 10,
-    pv: 30,
+    sales: 10,
   },
   {
     name: "B",
-    uv: 20,
-    pv: 10,
+    sales: 30,
   },
   {
     name: "C",
-    uv: 20,
-    pv: 30,
+    sales: 20,
   },
   {
     name: "D",
-    uv: 28,
-    pv: 25,
+    sales: 27,
+  },
+  {
+    name: "E",
+    sales: 18,
+  },
+  {
+    name: "F",
+    sales: 23,
+  },
+  {
+    name: "G",
+    sales: 34,
+  },
+  {
+    name: "A",
+    sales: 40,
+  },
+  {
+    name: "B",
+    sales: 30,
+  },
+  {
+    name: "C",
+    sales: 20,
+  },
+  {
+    name: "D",
+    sales: 7,
+  },
+  {
+    name: "E",
+    sales: 18,
+  },
+  {
+    name: "F",
+    sales: 23,
+  },
+  {
+    name: "G",
+    sales: 34,
   },
 ];
 
-export default function MyChartTwo() {
+export default function SalesChartt() {
   const [chartWidth, setChartWidth] = useState(550);
 
   useEffect(() => {
@@ -60,7 +96,7 @@ export default function MyChartTwo() {
   }, []);
   return (
     <section className="mt-5">
-      <ResponsiveContainer width="100%" height={250}>
+      <ResponsiveContainer width="100%" height={300}>
         <LineChart
           width={400}
           height={200}
@@ -72,26 +108,16 @@ export default function MyChartTwo() {
           <XAxis dataKey="name" />
           <YAxis />
           {/* position={{ y: 165, x: 1 }} */}
-          <Tooltip />
+          <Tooltip position={{ y: 265 }}/>
           <Line
-            // type="monotone"
-            dataKey="uv"
+            type="monotone"
+            dataKey="sales"
             stroke="#8884d8"
             fill="#8884d8"
             strokeWidth={3}
             dot={false}
             style={{
-              filter: `drop-shadow(1px 2px 5px #8884d8)`,
-            }}
-          /><Line
-            // type="monotone"
-            dataKey="pv"
-            stroke="#DF81FD"
-            fill="#DF81FD"
-            strokeWidth={3}
-            dot={false}
-            style={{
-              filter: `drop-shadow(1px 2px 5px #8884d8)`,
+              filter: `drop-shadow(1px 2px 2px #8884d8)`,
             }}
           />
         </LineChart>

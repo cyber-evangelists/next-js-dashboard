@@ -1,5 +1,49 @@
 import React from "react";
 
+const statsData = [
+  {
+    contry: "Pakistan",
+    border: "border-yellow-500",
+    price: "$32,879 (65%)",
+    lineColor: "bg-yellow-500",
+    width: "w-[58%]",
+  },
+  {
+    contry: "Russia",
+    border: "border-cyan-500",
+    price: "$32,879 (65%)",
+    lineColor: "bg-cyan-500",
+    width: "w-[79%]",
+  },
+  {
+    contry: "Canada",
+    border: "border-blue-800",
+    price: "$32,879 (65%)",
+    lineColor: "bg-blue-800",
+    width: "w-[52%]",
+  },
+  {
+    contry: "Brazil",
+    border: "border-orange-500",
+    price: "$12,279 (65%)",
+    lineColor: "bg-orange-500",
+    width: "w-[93%]",
+  },
+  {
+    contry: "United States",
+    border: "border-gray-600",
+    price: "$32,879 (65%)",
+    lineColor: "bg-gray-600",
+    width: "w-[72%]",
+  },
+  {
+    contry: "Germany",
+    border: "border-red-700",
+    price: "$22,813 (65%)",
+    lineColor: "bg-red-700",
+    width: "w-[88%]",
+  },
+];
 const Stats = () => {
   return (
     <div className="px-1 md:px-4 font-secondary">
@@ -8,48 +52,16 @@ const Stats = () => {
           <div className="w-1 py-4 bg-primary"></div>
           <h1 className="font-semibold text-lg">Statistics</h1>
         </div>
-        <CallStats
-          contry="Pakistan"
-          border="border-yellow-500"
-          price="$32,879 (65%)"
-          lineColor="bg-yellow-500"
-          width="w-[58%]"
-        />
-        <CallStats
-          contry="Russia"
-          price="$32,879 (65%)"
-          border="border-cyan-500"
-          lineColor="bg-cyan-500"
-          width="w-[79%]"
-        />
-        <CallStats
-          contry="Canada"
-          border="border-blue-800"
-          price="$32,879 (65%)"
-          lineColor="bg-blue-800"
-          width="w-[52%]"
-        />
-        <CallStats
-          contry="Brazil"
-          border="border-orange-500"
-          price="$32,879 (65%)"
-          lineColor="bg-orange-500"
-          width="w-[93%]"
-        />
-        <CallStats
-          contry="United States"
-          price="$32,879 (65%)"
-          border="border-gray-600"
-          lineColor="bg-gray-600"
-          width="w-[72%]"
-        />
-        <CallStats
-          contry="Germany"
-          price="$32,879 (65%)"
-          lineColor="bg-red-700"
-          border="border-red-700"
-          width="w-[88%]"
-        />
+        {statsData.map((d, i) => (
+          <CallStats
+            key={i}
+            contry={d.contry}
+            price={d.price}
+            lineColor={d.lineColor}
+            border={d.border}
+            width={d.width}
+          />
+        ))}
       </div>
     </div>
   );

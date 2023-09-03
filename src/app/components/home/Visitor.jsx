@@ -1,61 +1,7 @@
 "use client";
 import React from "react";
 import { BiSolidUpArrow } from "react-icons/bi";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
-import { Line } from "react-chartjs-2";
-import MyChartTwo from "./MyChartTwo";
-
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
-
-export const options = {
-  responsive: true,
-  plugins: {
-    legend: {
-      position: "top",
-    },
-    title: {
-      display: true,
-      //   text: "Chart.js Line Chart",
-    },
-  },
-};
-
-const labels = ["0", "1", "2", "3", "4", "5", "6", "7"];
-
-export const data = {
-  labels,
-  datasets: [
-    {
-      label: "Male",
-      data: [120, 130, 110, 120, 135, 115, 160, 120],
-      borderColor: "#a181fd",
-      backgroundColor: "#a181fd",
-    },
-    {
-      label: "Female",
-      data: [140, 110, 150, 190, 205, 113, 134, 163],
-      borderColor: "#DF81FD",
-      backgroundColor: "#DF81FD",
-    },
-  ],
-};
+import VisitorChart from "./VisitorChart";
 
 export const Visitor = () => {
   return (
@@ -83,8 +29,7 @@ export const Visitor = () => {
             </h1>
           </div>
         </div>
-        {/* <Line options={options} data={data} className="min-h-[300px]" /> */}
-        <MyChartTwo />
+        <VisitorChart />
       </div>
     </div>
   );

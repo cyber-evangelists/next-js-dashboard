@@ -6,21 +6,34 @@ import { HiMenuAlt1 } from "react-icons/hi";
 import { CiDark } from "react-icons/ci";
 import { AiOutlineMail, AiOutlineShoppingCart } from "react-icons/ai";
 import { IoMdNotificationsOutline } from "react-icons/io";
-import { FiSettings} from "react-icons/fi";
+import { FiSettings } from "react-icons/fi";
 import Link from "next/link";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import Dashboard from "./asideItems/DashboardSection";
+import Web from "./asideItems/WebSection";
+import Pagescom from "./asideItems/PagesSection";
+import Generel from "./asideItems/GenerelSection";
+import Componentss from "./asideItems/ComponentSection";
 
 const imgsrc =
   "https://nextjs.spruko.com/nowa/preview/assets/img/brand/logo.png";
 const avtar = "https://nextjs.spruko.com/nowa/preview/assets/img/faces/2.jpg";
 const Nav = () => {
+  const [dots, setdots] = useState(false);
+  const [asideData, setAsideData] = useState(false);
   return (
     <>
       <nav className="bg-white sticky top-0 z-20">
         <div className="hidden lg:flex items-center">
           <div className="h-[5rem] border py-4 px-2 flex justify-center items-center gap-2 min-w-[240px]">
-            <img src="/assets/logo.png" alt="_logo" className="inline-block w-9 h-9" />
-            <h1 className="font-medium text-xl">Cyber<span className="text-primary">Evangelists</span></h1>
+            <img
+              src="/assets/logo.png"
+              alt="_logo"
+              className="inline-block w-9 h-9"
+            />
+            <h1 className="font-medium text-xl">
+              Cyber<span className="text-primary">Evangelists</span>
+            </h1>
           </div>
           <div className="h-[5rem] flex-1 flex items-center justify-between border py-4 px-2">
             <div className="flex justify-center items-center">
@@ -84,7 +97,12 @@ const Nav = () => {
             </div>
           </div>
         </div>
-        <SmallScreen />
+        <SmallScreen
+          dots={dots}
+          setdots={setdots}
+          asideData={asideData}
+          setAsideData={setAsideData}
+        />
       </nav>
     </>
   );
@@ -92,17 +110,25 @@ const Nav = () => {
 
 export default Nav;
 
-const SmallScreen = () => {
-  const [dots, setdots] = useState(false);
+const SmallScreen = ({ dots, setdots, asideData, setAsideData }) => {
+  // console.log("here is aside setting", asideData);
+
   return (
     <>
       <nav className="bg-white">
         <div className="flex lg:hidden items-center justify-between px-5">
-          <div>
-            <HiMenuAlt1 className="text-xl sm:text-3xl mr-2" />
+          <div className="cursor-pointer">
+            <HiMenuAlt1
+              className="text-xl sm:text-3xl mr-2"
+              onClick={() => setAsideData(!asideData)}
+            />
           </div>
           <div className="h-[3.5rem] py-4 px-2 flex justify-center items-center gap-2 min-w-[100px]">
-            <img src="/assets/logo.png" alt="_logo" className="inline-block w-9 h-9" />
+            <img
+              src="/assets/logo.png"
+              alt="_logo"
+              className="inline-block w-9 h-9"
+            />
             {/* <h1 className="font-medium text-xl">Cyber<span className="text-primary">Evangelists</span></h1> */}
           </div>
           <div className="flex items-center gap-5">
@@ -167,6 +193,25 @@ const SmallScreen = () => {
                 </div>
               </div>
             </>
+          )}
+        </section>
+        <section className="w-full relative">
+          {asideData && (
+            <div
+              style={{
+                background: "rgba(255, 255, 255, 0.65)",
+                WebkitBackdropFilter: "blur(10px)",
+                backdropFilter: "blur(10px)",
+                border: "1px solid rgba(255, 255, 255, 0.325)",
+              }}
+              className="overflow-auto absolute h-screen w-full"
+            >
+              <Dashboard />
+              <Web />
+              <Pagescom />
+              <Generel />
+              <Componentss />
+            </div>
           )}
         </section>
       </nav>

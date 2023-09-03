@@ -1,9 +1,9 @@
 import React from "react";
-import Dashboard from "./asideItems/Dashboard";
-import Web from "./asideItems/Web";
-import Pagescom from "./asideItems/Pagescom";
-import Generel from "./asideItems/Generel";
-import Componentss from "./asideItems/componentss";
+import Dashboard from "./asideItems/DashboardSection";
+import Web from "./asideItems/WebSection";
+import Pagescom from "./asideItems/PagesSection";
+import Generel from "./asideItems/GenerelSection";
+import Componentss from "./asideItems/ComponentSection";
 
 const Aside = ({ children }) => {
   return (

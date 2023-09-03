@@ -4,7 +4,7 @@ import { AiFillGift } from "react-icons/ai";
 import { BsBarChartFill } from "react-icons/bs";
 import MainStructure from "./MainStructure";
 
-const Generel = () => {
+const GenerelSection = () => {
   return (
     <>
       <h1 className="text-[#B7BAC3] px-3 py-2 text-xs my-5 ">GENERAL</h1>
@@ -22,7 +22,7 @@ const Generel = () => {
   );
 };
 
-export default Generel;
+export default GenerelSection;
 
 const giftLinks = [
   { link: "#", title: "Cards" },

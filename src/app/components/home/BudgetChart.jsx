@@ -10,7 +10,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts"; 
-
+ 
 const data = [
     {
       name: "A",

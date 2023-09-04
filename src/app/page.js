@@ -17,7 +17,7 @@ export default function Home() {
       <Nav />
       <Header />
       <section className="xl:flex xl:flex-wrap ">
-        <div style={{ flex: "2" }}>
+        <div style={{ flex: "1" }} >
           <SalesActivites />
         </div>
 

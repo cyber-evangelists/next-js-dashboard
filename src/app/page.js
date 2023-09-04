@@ -17,34 +17,34 @@ export default function Home() {
       <Nav />
       <Header />
       <section className="xl:flex xl:flex-wrap ">
-        <div className="md:w-[60%] 4xl:w-[33.33%]">
+        <div className="xl:w-[60%] 4xl:w-[33.33%]">
           <SalesActivites />
         </div>
 
-        <div className="md:w-[40%] 4xl:w-[33.33%]" >
+        <div className="xl:w-[40%] 4xl:w-[33.33%]" >
           <Timeline />
         </div>
 
-        <div className="md:w-[30%] 4xl:w-[33.33%]">
+        <div className="xl:w-[30%] 4xl:w-[33.33%]">
           <Stats />
         </div>
 
-        <div className="md:w-[30%] 4xl:w-[33.33%]">
+        <div className="xl:w-[30%] 4xl:w-[33.33%]">
           <Visitor />
         </div>
-        <div className="md:w-[40%] 4xl:w-[33.33%]">
+        <div className="xl:w-[40%] 4xl:w-[33.33%]">
           <Transactions/>
         </div>
 
-        <div className="md:w-[40%] md:order-3 4xl:w-[33.33%]" >
+        <div className="xl:w-[40%] xl:order-3 4xl:w-[33.33%]" >
           <Tasks />
         </div>
 
-        <div className="md:w-[30%] 4xl:w-[33.33%]" >
+        <div className="xl:w-[30%] 4xl:w-[33.33%]" >
           <Budget />
         </div>
 
-        <div className="md:w-[30%] 4xl:w-[33.33%]" >
+        <div className="xl:w-[30%] 4xl:w-[33.33%]" >
           <Customer />
         </div>
       </section>

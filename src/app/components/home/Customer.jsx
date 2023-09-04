@@ -34,7 +34,7 @@ export const Customer = () => {
                 className="w-8 h-8 rounded-full inline-block"
               />
               <div className="text-xs">
-                <h1>Samantha Melon</h1>
+                <h1>Samantha</h1>
                 <h1 className="text-[#b2b3b4]">User ID: #1234</h1>
               </div>
             </div>
@@ -51,7 +51,7 @@ export const Customer = () => {
                 className="w-8 h-8 rounded-full inline-block"
               />
               <div className="text-xs">
-                <h1>Samantha Melon</h1>
+                <h1>Samantha</h1>
                 <h1 className="text-[#b2b3b4]">User ID: #1234</h1>
               </div>
             </div>

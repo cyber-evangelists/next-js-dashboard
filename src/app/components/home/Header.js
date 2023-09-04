@@ -35,6 +35,7 @@ export const Header = () => {
             percentage="0.05%"
             bgColor="bg-[#FDD9D9]"
             iconColor="bg-[#F74F75]"
+            position=" transform rotate-180"
           />
           <Design
             icon={BiLinkExternal}
@@ -50,7 +51,7 @@ export const Header = () => {
   );
 };
 
-const Design = ({ icon, heading, headNumber, percentage, iconColor, bgColor }) => {
+const Design = ({ icon, heading, headNumber, percentage, iconColor, bgColor, position }) => {
   const IconComponent = icon || RiShoppingBag3Line;
   return (
     <>
@@ -69,7 +70,7 @@ const Design = ({ icon, heading, headNumber, percentage, iconColor, bgColor }) =
           </div>
         </div>
         <div className={`${bgColor} flex justify-center items-center rounded-full px-2 py-1 gap-1 text-xs`}>
-          <BiSolidUpArrow className=""/> {percentage}
+          <BiSolidUpArrow className={null ||position}/> {percentage}
         </div>
       </section>
     </>

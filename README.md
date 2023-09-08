@@ -2,7 +2,7 @@
 
 Welcome to the live deployment of my Next.js dashboard project! This dashboard, designed with Next.js and Tailwind CSS, is now available online, ready for you to explore.
 
-![Dashboard Screenshot](/assets/dashboard.jpg)
+![Dashboard Screenshot](assets/dashboard.jpg)
 
 ## Live Project
 
